@@ -1,19 +1,13 @@
-function mostrarTempo() {
-    const dataInicio = new Date('2022-04-11T00:00:00');
+const inicio = new Date('2022-04-11T00:00:00');
+function contar() {
     const agora = new Date();
-    
-    let diff = agora - dataInicio;
-    
+    const diff = agora - inicio;
     const dias = Math.floor(diff / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    const minutos = Math.floor((diff / 1000 / 60) % 60);
-    const segundos = Math.floor((diff / 1000) % 60);
-
-    document.getElementById('contador').innerHTML = 
-        `Juntos há:<br><strong>${dias} dias, ${horas}h ${minutos}m ${segundos}s</strong>`;
+    const horas = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const segundos = Math.floor((diff % (1000 * 60)) / 1000);
+    document.getElementById('contador').innerText = `${dias} dias, ${horas}h ${minutos}m ${segundos}s`;
 }
-
-// Atualiza a cada 1 segundo
-setInterval(mostrarTempo, 1000);
-mostrarTempo();
+setInterval(contar, 1000);
+contar();
 
