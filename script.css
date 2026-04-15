@@ -1,6 +1,7 @@
-/* Fundo claro e elegante */
+/* Fundo com corações e estilo */
 body { 
-    background-color: #fdf5e6; 
+    background-color: #ff99cc; 
+    background-image: url('https://www.transparenttextures.com/patterns/hearts.png');
     color: #5c4033; 
     font-family: 'Arial', sans-serif; 
     display: flex; 
@@ -12,9 +13,11 @@ body {
     width: 90%; 
     max-width: 500px; 
     text-align: center; 
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco levemente transparente para o texto */
+    padding: 20px;
+    border-radius: 15px;
 }
 
-/* O design da Árvore Carmesim */
 .arvore { 
     width: 150px; 
     height: 150px; 
