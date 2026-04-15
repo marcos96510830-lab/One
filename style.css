@@ -54,3 +54,16 @@ contador {
     justify-content: center;
 }
 
+/* Animação de pulsação */
+@keyframes pulsar {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Adicionando a animação na classe .arvore */
+.arvore {
+    /* ... (deixe o que você já tem, apenas adicione esta linha abaixo) ... */
+    animation: pulsar 3s infinite ease-in-out;
+}
+
