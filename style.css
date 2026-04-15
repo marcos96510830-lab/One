@@ -1,57 +1,15 @@
+/* Configuração Geral */
 body {
-background-color: #fffaf0; /* Um tom de papel antigo/creme suave */
-    color: #4a3728; 
-    font-family: 'Georgia', serif; /* Fonte mais clássica */
-    text-align: center; 
-    padding: 40px 20px; 
-}
-
-h1 {
-    font-size: 1.5rem;
-    color: #8b0000;
-    margin-bottom: 10px;
-}.Flores_Carmesim { max-width: 500px; margin: 0 auto; }
-.arvore { 
-    width: 160px; 
-    height: 180px; 
-    background: crimson; 
-    /* Forma orgânica: arredondamento diferente em cada canto */
-    border-radius: 60% 40% 70% 30% / 40% 60% 30% 60%;
-    margin: 20px auto; 
-    /* Brilho suave (aura) ao redor da árvore */
-    box-shadow: 0 0 30px rgba(220, 20, 60, 0.6); 
-    /* Gradiente para dar profundidade */
-    background: radial-gradient(circle at 30% 30%, #ff4d4d, #8b0000);
-    position: relative;
-}
-
-/* O tronco ajustado para ficar mais natural */
-.arvore::after { 
-    content: ''; 
-    display: block; 
-    width: 15px; 
-    height: 35px; 
-    background: #5c4033; /* Marrom mais escuro e elegante */
-    margin: 0 auto; 
-    border-radius: 2px;
-    position: absolute;
-bottom: -30px; /* Isso empurra o tronco um pouco mais para baixo */
-z-index: -1;  /* Isso coloca o tronco levemente atrás da copa, o que dá mais profundidade */
-    left: 50%;
-    transform: translateX(-50%);
-}
-}
-contador {
-    font-size: 1.3rem; 
-    font-weight: bold; 
-    color: #d2691e; /* Cor chocolate/laranja queimado */
-    margin-top: 30px;
-    letter-spacing: 1px;
-}
-.arvore-container {
-    padding-bottom: 40px; /* Isso cria espaço para o tronco não sumir na tela */
+    background-color: #fffaf0;
+    color: #4a3728;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Animação de pulsação */
@@ -61,9 +19,44 @@ contador {
     100% { transform: scale(1); }
 }
 
-/* Adicionando a animação na classe .arvore */
+/* A Árvore */
 .arvore {
-    /* ... (deixe o que você já tem, apenas adicione esta linha abaixo) ... */
+    width: 200px;
+    height: 220px;
+    background: crimson;
+    /* Forma orgânica */
+    border-radius: 60% 40% 70% 30% / 40% 60% 30% 60%;
+    margin: 20px auto;
+    /* Brilho e profundidade */
+    box-shadow: 0 0 30px rgba(220, 20, 60, 0.6);
+    background: radial-gradient(circle at 30% 30%, #ff4d4d, #8b0000);
+    position: relative;
+    /* Aplicando a animação */
     animation: pulsar 3s infinite ease-in-out;
+}
+
+/* O Tronco */
+.arvore::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 40px;
+    background: #5c4033;
+    margin: 0 auto;
+    border-radius: 3px;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+/* Texto e Contador */
+#contador {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d2691e;
+    margin-top: 50px;
+    letter-spacing: 1px;
 }
 
