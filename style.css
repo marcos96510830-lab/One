@@ -1,5 +1,30 @@
 body { background-color: #fdf5e6; color: #5c4033; font-family: 'Arial', sans-serif; text-align: center; padding: 20px; }
 .Flores_Carmesim { max-width: 500px; margin: 0 auto; }
-.arvore { width: 150px; height: 150px; background: crimson; border-radius: 50% 50% 20% 20%; margin: 20px auto; box-shadow: 0 0 20px darkred; }
+.arvore { 
+    width: 180px;  /* Um pouco maior */
+    height: 180px; /* Um pouco maior */
+    background: crimson; 
+
+    /* O segredo da forma orgânica está aqui: */
+    border-radius: 50% 50% 40% 40%; 
+
+    margin: 20px auto; 
+    box-shadow: 0 0 25px darkred; /* Sombra mais visível */
+
+    /* Adicione esta linha para criar o efeito de gradiente da imagem */
+    background: radial-gradient(circle, #ff3333 30%, darkred 100%);
+}
+/* O tronco é um novo bloco logo após o fechamento da chave da árvore */
+.arvore::after { 
+    content: ''; 
+    display: block; 
+    width: 25px; 
+    height: 40px; 
+    background: #8b4513; 
+    margin: 0 auto; 
+    border-radius: 3px;
+    position: relative;
+    top: 0;
+}
 #contador { font-size: 1.2rem; font-weight: bold; margin-top: 20px; color: #8b0000; }
 
