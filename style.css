@@ -1,4 +1,4 @@
-/* Configuração Geral */
+/* Configuração Geral e Fonte */
 body {
     background-color: #fffaf0;
     color: #4a3728;
@@ -10,6 +10,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+}
+
+/* Título */
+h1 {
+    font-size: 2.5rem;
+    color: #8b0000;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Animação de pulsação */
@@ -24,14 +33,11 @@ body {
     width: 200px;
     height: 220px;
     background: crimson;
-    /* Forma orgânica */
     border-radius: 60% 40% 70% 30% / 40% 60% 30% 60%;
     margin: 20px auto;
-    /* Brilho e profundidade */
     box-shadow: 0 0 30px rgba(220, 20, 60, 0.6);
     background: radial-gradient(circle at 30% 30%, #ff4d4d, #8b0000);
     position: relative;
-    /* Aplicando a animação */
     animation: pulsar 3s infinite ease-in-out;
 }
 
@@ -51,12 +57,13 @@ body {
     z-index: -1;
 }
 
-/* Texto e Contador */
+/* Contador */
 #contador {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     color: #d2691e;
     margin-top: 50px;
     letter-spacing: 1px;
+    text-align: center;
 }
 
