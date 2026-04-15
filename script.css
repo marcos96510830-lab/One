@@ -1,0 +1,33 @@
+/* Fundo claro e elegante */
+body { 
+    background-color: #fdf5e6; 
+    color: #5c4033; 
+    font-family: 'Arial', sans-serif; 
+    display: flex; 
+    justify-content: center; 
+    padding: 20px; 
+}
+
+.Flores_Carmesim { 
+    width: 90%; 
+    max-width: 500px; 
+    text-align: center; 
+}
+
+/* O design da Árvore Carmesim */
+.arvore { 
+    width: 150px; 
+    height: 150px; 
+    background: crimson; 
+    border-radius: 50% 50% 20% 20%; 
+    margin: 20px auto; 
+    box-shadow: 0 0 20px darkred; 
+}
+
+#contador { 
+    font-size: 1.2rem; 
+    font-weight: bold; 
+    margin-top: 20px; 
+    color: #8b0000;
+}
+
