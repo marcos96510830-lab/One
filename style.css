@@ -10,7 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 /* Título */
@@ -34,7 +34,8 @@ h1 {
     height: 220px;
     background: crimson;
     border-radius: 60% 40% 70% 30% / 40% 60% 30% 60%;
-    margin: 20px auto;
+    transform: scale(2.0); 
+    margin: 80px auto;
     box-shadow: 0 0 30px rgba(220, 20, 60, 0.6);
     background: radial-gradient(circle at 30% 30%, #ff4d4d, #8b0000);
     position: relative;
@@ -59,11 +60,12 @@ h1 {
 
 /* Contador */
 #contador {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: bold;
     color: #d2691e;
     margin-top: 50px;
     letter-spacing: 1px;
     text-align: center;
+    transform: scale(1.2);
 }
 
