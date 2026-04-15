@@ -1,11 +1,22 @@
-body { background-color: #fdf5e6; color: #5c4033; font-family: 'Arial', sans-serif; text-align: center; padding: 20px; }
-.Flores_Carmesim { max-width: 500px; margin: 0 auto; }
+body {
+background-color: #fffaf0; /* Um tom de papel antigo/creme suave */
+    color: #4a3728; 
+    font-family: 'Georgia', serif; /* Fonte mais clássica */
+    text-align: center; 
+    padding: 40px 20px; 
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #8b0000;
+    margin-bottom: 10px;
+}.Flores_Carmesim { max-width: 500px; margin: 0 auto; }
 .arvore { 
     width: 160px; 
     height: 180px; 
     background: crimson; 
     /* Forma orgânica: arredondamento diferente em cada canto */
-    border-radius: 40% 60% 50% 50% / 60% 40% 60% 40%; 
+    border-radius: 60% 40% 70% 30% / 40% 60% 30% 60%;
     margin: 20px auto; 
     /* Brilho suave (aura) ao redor da árvore */
     box-shadow: 0 0 30px rgba(220, 20, 60, 0.6); 
@@ -24,10 +35,22 @@ body { background-color: #fdf5e6; color: #5c4033; font-family: 'Arial', sans-ser
     margin: 0 auto; 
     border-radius: 2px;
     position: absolute;
-    bottom: -30px;
+bottom: -30px; /* Isso empurra o tronco um pouco mais para baixo */
+z-index: -1;  /* Isso coloca o tronco levemente atrás da copa, o que dá mais profundidade */
     left: 50%;
     transform: translateX(-50%);
 }
 }
-#contador { font-size: 1.2rem; font-weight: bold; margin-top: 20px; color: #8b0000; }
+contador {
+    font-size: 1.3rem; 
+    font-weight: bold; 
+    color: #d2691e; /* Cor chocolate/laranja queimado */
+    margin-top: 30px;
+    letter-spacing: 1px;
+}
+.arvore-container {
+    padding-bottom: 40px; /* Isso cria espaço para o tronco não sumir na tela */
+    display: flex;
+    justify-content: center;
+}
 
